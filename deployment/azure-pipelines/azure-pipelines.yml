@@ -1,0 +1,222 @@
+trigger:
+  branches:
+    include:
+    - main
+    - develop
+    - release/*
+  paths:
+    exclude:
+    - docs/*
+    - README.md
+
+pr:
+  branches:
+    include:
+    - main
+    - develop
+  paths:
+    exclude:
+    - docs/*
+    - README.md
+
+variables:
+  buildConfiguration: 'Release'
+  vmImageName: 'ubuntu-latest'
+  dotNetVersion: '8.0.x'
+  majorVersion: '1'
+  minorVersion: '0'
+  patchVersion: $[counter(variables['minorVersion'], 0)]
+  buildVersion: '$(majorVersion).$(minorVersion).$(patchVersion)'
+
+stages:
+- stage: Build
+  displayName: 'Build and Test'
+  jobs:
+  - job: Build
+    displayName: 'Build Job'
+    pool:
+      vmImage: $(vmImageName)
+    
+    steps:
+    - task: UseDotNet@2
+      displayName: 'Use .NET $(dotNetVersion)'
+      inputs:
+        version: $(dotNetVersion)
+        includePreviewVersions: false
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Restore NuGet Packages'
+      inputs:
+        command: 'restore'
+        projects: 'EnterpriseApp.sln'
+        verbosityRestore: 'Minimal'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Build Solution'
+      inputs:
+        command: 'build'
+        projects: 'EnterpriseApp.sln'
+        arguments: '--configuration $(buildConfiguration) --no-restore'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Run Unit Tests'
+      inputs:
+        command: 'test'
+        projects: 'tests/UnitTests/**/*.csproj'
+        arguments: '--configuration $(buildConfiguration) --no-build --collect:"XPlat Code Coverage" --logger trx --results-directory $(Agent.TempDirectory)/TestResults'
+        publishTestResults: true
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Run Integration Tests'
+      inputs:
+        command: 'test'
+        projects: 'tests/IntegrationTests/**/*.csproj'
+        arguments: '--configuration $(buildConfiguration) --no-build --logger trx --results-directory $(Agent.TempDirectory)/TestResults'
+        publishTestResults: true
+
+    - task: PublishCodeCoverageResults@1
+      displayName: 'Publish Code Coverage'
+      inputs:
+        codeCoverageTool: 'Cobertura'
+        summaryFileLocation: '$(Agent.TempDirectory)/TestResults/**/coverage.cobertura.xml'
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish User Management Service'
+      inputs:
+        command: 'publish'
+        projects: 'src/Services/UserManagement/UserManagement.API.csproj'
+        arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/UserManagement --no-build'
+        zipAfterPublish: true
+        modifyOutputPath: false
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish Order Processing Service'
+      inputs:
+        command: 'publish'
+        projects: 'src/Services/OrderProcessing/OrderProcessing.API.csproj'
+        arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/OrderProcessing --no-build'
+        zipAfterPublish: true
+        modifyOutputPath: false
+
+    - task: DotNetCoreCLI@2
+      displayName: 'Publish Payment Gateway Service'
+      inputs:
+        command: 'publish'
+        projects: 'src/Services/PaymentGateway/PaymentGateway.API.csproj'
+        arguments: '--configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/PaymentGateway --no-build'
+        zipAfterPublish: true
+        modifyOutputPath: false
+
+    - task: PublishBuildArtifacts@1
+      displayName: 'Publish Build Artifacts'
+      inputs:
+        PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+        ArtifactName: 'drop'
+        publishLocation: 'Container'
+
+- stage: Docker
+  displayName: 'Build and Push Docker Images'
+  dependsOn: Build
+  condition: and(succeeded(), or(eq(variables['Build.SourceBranch'], 'refs/heads/main'), eq(variables['Build.SourceBranch'], 'refs/heads/develop')))
+  jobs:
+  - job: Docker
+    displayName: 'Docker Build and Push'
+    pool:
+      vmImage: $(vmImageName)
+    
+    steps:
+    - task: Docker@2
+      displayName: 'Build User Management Image'
+      inputs:
+        containerRegistry: 'EnterpriseAppRegistry'
+        repository: 'enterprise-app/user-management'
+        command: 'build'
+        Dockerfile: 'deployment/docker/UserManagement.Dockerfile'
+        tags: |
+          $(buildVersion)
+          latest
+
+    - task: Docker@2
+      displayName: 'Push User Management Image'
+      inputs:
+        containerRegistry: 'EnterpriseAppRegistry'
+        repository: 'enterprise-app/user-management'
+        command: 'push'
+        tags: |
+          $(buildVersion)
+          latest
+
+    - task: Docker@2
+      displayName: 'Build Order Processing Image'
+      inputs:
+        containerRegistry: 'EnterpriseAppRegistry'
+        repository: 'enterprise-app/order-processing'
+        command: 'build'
+        Dockerfile: 'deployment/docker/OrderProcessing.Dockerfile'
+        tags: |
+          $(buildVersion)
+          latest
+
+    - task: Docker@2
+      displayName: 'Push Order Processing Image'
+      inputs:
+        containerRegistry: 'EnterpriseAppRegistry'
+        repository: 'enterprise-app/order-processing'
+        command: 'push'
+        tags: |
+          $(buildVersion)
+          latest
+
+- stage: Deploy_Dev
+  displayName: 'Deploy to Development'
+  dependsOn: Docker
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/develop'))
+  jobs:
+  - deployment: DeployDev
+    displayName: 'Deploy to Development Environment'
+    environment: 'development'
+    pool:
+      vmImage: $(vmImageName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: KubernetesManifest@0
+            displayName: 'Deploy to Kubernetes'
+            inputs:
+              action: 'deploy'
+              kubernetesServiceConnection: 'dev-k8s-connection'
+              namespace: 'enterprise-app-dev'
+              manifests: |
+                deployment/kubernetes/user-management.yaml
+                deployment/kubernetes/order-processing.yaml
+              containers: |
+                enterprise-app/user-management:$(buildVersion)
+                enterprise-app/order-processing:$(buildVersion)
+
+- stage: Deploy_Prod
+  displayName: 'Deploy to Production'
+  dependsOn: Docker
+  condition: and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/main'))
+  jobs:
+  - deployment: DeployProd
+    displayName: 'Deploy to Production Environment'
+    environment: 'production'
+    pool:
+      vmImage: $(vmImageName)
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          - task: KubernetesManifest@0
+            displayName: 'Deploy to Kubernetes'
+            inputs:
+              action: 'deploy'
+              kubernetesServiceConnection: 'prod-k8s-connection'
+              namespace: 'enterprise-app-prod'
+              manifests: |
+                deployment/kubernetes/user-management.yaml
+                deployment/kubernetes/order-processing.yaml
+              containers: |
+                enterprise-app/user-management:$(buildVersion)
+                enterprise-app/order-processing:$(buildVersion)
