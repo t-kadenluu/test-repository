@@ -13,24 +13,41 @@
   ],
   "projectDependencies": [],
   "namespaces": [
+    "AutoMapper",
+    "FluentValidation",
     "MassTransit",
+    "Microsoft.AspNetCore.Authorization",
+    "Microsoft.AspNetCore.Http",
     "Microsoft.AspNetCore.Mvc",
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.Extensions.Logging",
+    "Newtonsoft.Json",
     "OrderProcessing.API.Models",
-    "OrderProcessing.API.Services"
+    "OrderProcessing.API.Services",
+    "Swashbuckle.AspNetCore.Annotations",
+    "System",
+    "System.Collections.Generic",
+    "System.ComponentModel.DataAnnotations",
+    "System.Linq",
+    "System.Security.Claims",
+    "System.Threading.Tasks"
   ],
   "technologies": [
-    "ASP.NET Core"
+    "ASP.NET Core",
+    "Entity Framework Core",
+    "Microsoft.Extensions.Logging",
+    "Newtonsoft.Json"
   ],
   "metadata": {
-    "TotalSourceFiles": 5,
+    "TotalSourceFiles": 7,
     "ConfigurationFiles": 0,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 450,
+    "EstimatedTotalLines": 735,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:19:16.5734187Z",
+  "analyzedAt": "2025-07-30T21:23:06.526264Z",
   "technologiesFilePath": ""
 }

@@ -13,21 +13,30 @@
   "projectDependencies": [],
   "namespaces": [
     "Microsoft.Extensions.Caching.Distributed",
-    "Newtonsoft.Json"
+    "Microsoft.Extensions.Caching.Memory",
+    "Microsoft.Extensions.Logging",
+    "Microsoft.Extensions.Options",
+    "Newtonsoft.Json",
+    "StackExchange.Redis",
+    "System",
+    "System.Collections.Generic",
+    "System.Text",
+    "System.Threading.Tasks"
   ],
   "technologies": [
+    "Microsoft.Extensions.Logging",
     "Newtonsoft.Json"
   ],
   "metadata": {
-    "TotalSourceFiles": 1,
+    "TotalSourceFiles": 2,
     "ConfigurationFiles": 0,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 111,
+    "EstimatedTotalLines": 238,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:19:16.3149511Z",
+  "analyzedAt": "2025-07-30T21:23:06.1967107Z",
   "technologiesFilePath": ""
 }

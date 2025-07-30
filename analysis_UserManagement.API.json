@@ -14,29 +14,41 @@
   "projectDependencies": [],
   "namespaces": [
     "AutoMapper",
+    "FluentValidation",
+    "Microsoft.AspNetCore.Authorization",
     "Microsoft.AspNetCore.Http",
+    "Microsoft.AspNetCore.Identity",
     "Microsoft.AspNetCore.Mvc",
+    "Microsoft.EntityFrameworkCore",
     "Microsoft.EntityFrameworkCore.Migrations",
     "Microsoft.Extensions.Diagnostics.HealthChecks",
     "Microsoft.Extensions.Hosting",
+    "Microsoft.Extensions.Logging",
+    "Swashbuckle.AspNetCore.Annotations",
+    "System",
+    "System.Collections.Generic",
     "System.Diagnostics",
+    "System.Linq",
+    "System.Security.Claims",
+    "System.Threading.Tasks",
     "UserManagement.API.Models",
     "UserManagement.API.Services"
   ],
   "technologies": [
     "ASP.NET Core",
-    "Entity Framework Core"
+    "Entity Framework Core",
+    "Microsoft.Extensions.Logging"
   ],
   "metadata": {
-    "TotalSourceFiles": 9,
+    "TotalSourceFiles": 11,
     "ConfigurationFiles": 2,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 612,
+    "EstimatedTotalLines": 820,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:19:16.6617537Z",
+  "analyzedAt": "2025-07-30T21:23:06.6297609Z",
   "technologiesFilePath": ""
 }
