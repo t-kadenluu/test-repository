@@ -15,32 +15,43 @@
   ],
   "projectDependencies": [],
   "namespaces": [
+    "AutoMapper",
     "FluentAssertions",
+    "FluentValidation",
     "Microsoft.AspNetCore.Mvc.Testing",
+    "Microsoft.EntityFrameworkCore",
     "Microsoft.Extensions.DependencyInjection",
+    "Microsoft.Extensions.Logging",
+    "Moq",
+    "System",
     "System.Net",
+    "System.Net.Http",
     "System.Net.Http.Json",
     "System.Text.Json",
+    "System.Threading.Tasks",
     "UserManagement.API.Models",
     "Xunit"
   ],
   "technologies": [
     "ASP.NET Core",
     "Dependency Injection",
+    "Entity Framework Core",
     "HttpClient",
+    "Microsoft.Extensions.Logging",
+    "Moq",
     "System.Text.Json",
     "xUnit"
   ],
   "metadata": {
-    "TotalSourceFiles": 1,
+    "TotalSourceFiles": 2,
     "ConfigurationFiles": 0,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 183,
+    "EstimatedTotalLines": 347,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:26:18.7620744Z",
+  "analyzedAt": "2025-07-30T21:33:06.2244586Z",
   "technologiesFilePath": ""
 }
