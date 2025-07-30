@@ -1,0 +1,36 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Services\\OrderProcessing\\OrderProcessing.API.csproj",
+  "projectName": "OrderProcessing.API",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "MassTransit.RabbitMQ@8.1.0",
+    "MassTransit@8.1.0",
+    "Microsoft.AspNetCore.OpenApi@8.0.0",
+    "Microsoft.EntityFrameworkCore.Design@8.0.0",
+    "Microsoft.EntityFrameworkCore.SqlServer@8.0.0",
+    "Serilog.AspNetCore@8.0.0",
+    "Swashbuckle.AspNetCore@6.5.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "MassTransit",
+    "Microsoft.AspNetCore.Mvc",
+    "OrderProcessing.API.Models",
+    "OrderProcessing.API.Services"
+  ],
+  "technologies": [
+    "ASP.NET Core"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 5,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 450,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:31.7702566Z",
+  "technologiesFilePath": ""
+}

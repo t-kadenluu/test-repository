@@ -1,0 +1,33 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Caching\\Caching.csproj",
+  "projectName": "Caching",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "Microsoft.Extensions.Caching.Abstractions@8.0.0",
+    "Microsoft.Extensions.Caching.StackExchangeRedis@8.0.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0",
+    "Microsoft.Extensions.Logging.Abstractions@8.0.0",
+    "Newtonsoft.Json@13.0.3",
+    "StackExchange.Redis@2.7.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "Microsoft.Extensions.Caching.Distributed",
+    "Newtonsoft.Json"
+  ],
+  "technologies": [
+    "Newtonsoft.Json"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 1,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 111,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:29.8001671Z",
+  "technologiesFilePath": ""
+}

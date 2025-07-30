@@ -1,0 +1,34 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Configuration\\Configuration.csproj",
+  "projectName": "Configuration",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "Microsoft.Extensions.Configuration.Abstractions@8.0.0",
+    "Microsoft.Extensions.Configuration.Binder@8.0.0",
+    "Microsoft.Extensions.Configuration@8.0.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0",
+    "Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0",
+    "Microsoft.Extensions.Options@8.0.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.DependencyInjection"
+  ],
+  "technologies": [
+    "Dependency Injection",
+    "Microsoft.Extensions.Configuration"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 1,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 47,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:30.3420579Z",
+  "technologiesFilePath": ""
+}

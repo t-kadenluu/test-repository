@@ -1,0 +1,40 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Monitoring\\Monitoring.csproj",
+  "projectName": "Monitoring",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "AspNetCore.HealthChecks.Elasticsearch@7.0.0",
+    "AspNetCore.HealthChecks.RabbitMQ@7.0.0",
+    "AspNetCore.HealthChecks.Redis@7.0.1",
+    "AspNetCore.HealthChecks.SqlServer@7.0.0",
+    "Microsoft.ApplicationInsights.DependencyCollector@2.21.0",
+    "Microsoft.ApplicationInsights@2.21.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0",
+    "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0",
+    "Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+    "Microsoft.Extensions.Hosting.Abstractions@8.0.0",
+    "Microsoft.Extensions.Logging.Abstractions@8.0.0",
+    "OpenTelemetry.Extensions.Hosting@1.7.0",
+    "OpenTelemetry.Instrumentation.AspNetCore@1.7.1",
+    "OpenTelemetry.Instrumentation.Http@1.7.1",
+    "OpenTelemetry.Instrumentation.SqlClient@1.7.0-beta.1",
+    "OpenTelemetry@1.7.0",
+    "prometheus-net.AspNetCore@8.2.1",
+    "Prometheus.NetStandard@4.2.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 0,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 0,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:31.6733097Z",
+  "technologiesFilePath": ""
+}

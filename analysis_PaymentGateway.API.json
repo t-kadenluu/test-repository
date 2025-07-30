@@ -1,0 +1,30 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Services\\PaymentGateway\\PaymentGateway.API.csproj",
+  "projectName": "PaymentGateway.API",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "Microsoft.AspNetCore.Authentication.JwtBearer@8.0.0",
+    "Microsoft.AspNetCore.OpenApi@8.0.0",
+    "Microsoft.EntityFrameworkCore.SqlServer@8.0.0",
+    "Serilog.AspNetCore@8.0.0",
+    "Stripe.net@43.0.0",
+    "Swashbuckle.AspNetCore@6.5.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "PaymentGateway.API.Models"
+  ],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 2,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 301,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:32.0269117Z",
+  "technologiesFilePath": ""
+}

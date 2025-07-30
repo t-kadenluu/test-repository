@@ -1,0 +1,42 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Services\\UserManagement\\UserManagement.API.csproj",
+  "projectName": "UserManagement.API",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "AutoMapper@12.0.1",
+    "FluentValidation.AspNetCore@11.3.0",
+    "Microsoft.AspNetCore.OpenApi@8.0.0",
+    "Microsoft.EntityFrameworkCore.Design@8.0.0",
+    "Microsoft.EntityFrameworkCore.SqlServer@8.0.0",
+    "Serilog.AspNetCore@8.0.0",
+    "Swashbuckle.AspNetCore@6.5.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "AutoMapper",
+    "Microsoft.AspNetCore.Http",
+    "Microsoft.AspNetCore.Mvc",
+    "Microsoft.EntityFrameworkCore.Migrations",
+    "Microsoft.Extensions.Diagnostics.HealthChecks",
+    "Microsoft.Extensions.Hosting",
+    "System.Diagnostics",
+    "UserManagement.API.Models",
+    "UserManagement.API.Services"
+  ],
+  "technologies": [
+    "ASP.NET Core",
+    "Entity Framework Core"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 9,
+    "ConfigurationFiles": 2,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 612,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:32.6345694Z",
+  "technologiesFilePath": ""
+}

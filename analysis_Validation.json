@@ -1,0 +1,28 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Validation\\Validation.csproj",
+  "projectName": "Validation",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "FluentValidation.AspNetCore@11.3.0",
+    "FluentValidation.DependencyInjectionExtensions@11.8.0",
+    "FluentValidation@11.8.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "FluentValidation"
+  ],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 1,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 44,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:33.1625753Z",
+  "technologiesFilePath": ""
+}

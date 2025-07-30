@@ -1,0 +1,46 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\tests\\IntegrationTests\\IntegrationTests.csproj",
+  "projectName": "IntegrationTests",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "coverlet.collector@6.0.0",
+    "FluentAssertions@6.12.0",
+    "Microsoft.AspNetCore.Mvc.Testing@8.0.0",
+    "Microsoft.Extensions.DependencyInjection@8.0.0",
+    "Microsoft.NET.Test.Sdk@17.8.0",
+    "Testcontainers.SqlServer@3.5.0",
+    "Testcontainers@3.5.0",
+    "xunit.runner.visualstudio@2.4.5",
+    "xunit@2.4.2"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "FluentAssertions",
+    "Microsoft.AspNetCore.Mvc.Testing",
+    "Microsoft.Extensions.DependencyInjection",
+    "System.Net",
+    "System.Net.Http.Json",
+    "System.Text.Json",
+    "UserManagement.API.Models",
+    "Xunit"
+  ],
+  "technologies": [
+    "ASP.NET Core",
+    "Dependency Injection",
+    "HttpClient",
+    "System.Text.Json",
+    "xUnit"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 1,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 183,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:31.0576011Z",
+  "technologiesFilePath": ""
+}

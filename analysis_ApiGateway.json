@@ -1,0 +1,36 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Services\\ApiGateway\\ApiGateway.csproj",
+  "projectName": "ApiGateway",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "AspNetCore.HealthChecks.UI.InMemory.Storage@7.0.0",
+    "AspNetCore.HealthChecks.UI@7.0.2",
+    "Microsoft.ApplicationInsights.AspNetCore@2.21.0",
+    "Microsoft.AspNetCore.Authentication.JwtBearer@8.0.0",
+    "Microsoft.AspNetCore.OpenApi@8.0.0",
+    "Microsoft.AspNetCore.RateLimiting@8.0.0",
+    "Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+    "Ocelot.Provider.Consul@22.0.1",
+    "Ocelot.Provider.Polly@22.0.1",
+    "Ocelot@22.0.1",
+    "Serilog.AspNetCore@8.0.0",
+    "Serilog.Sinks.Console@5.0.0",
+    "Serilog.Sinks.File@5.0.0",
+    "Swashbuckle.AspNetCore@6.5.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 0,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 0,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:29.1061863Z",
+  "technologiesFilePath": ""
+}

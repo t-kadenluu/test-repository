@@ -1,0 +1,26 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Common\\Common.csproj",
+  "projectName": "Common",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "Microsoft.Extensions.Configuration.Abstractions@8.0.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0",
+    "Newtonsoft.Json@13.0.3",
+    "System.ComponentModel.Annotations@5.0.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 2,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 102,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:30.1738443Z",
+  "technologiesFilePath": ""
+}

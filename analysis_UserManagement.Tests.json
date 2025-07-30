@@ -1,0 +1,40 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\tests\\UnitTests\\Services\\UserManagement.Tests.csproj",
+  "projectName": "UserManagement.Tests",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "coverlet.collector@6.0.0",
+    "FluentAssertions@6.12.0",
+    "Microsoft.AspNetCore.Mvc.Testing@8.0.0",
+    "Microsoft.NET.Test.Sdk@17.8.0",
+    "Moq@4.20.69",
+    "xunit.runner.visualstudio@2.4.5",
+    "xunit@2.4.2"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "FluentAssertions",
+    "Microsoft.Extensions.Logging",
+    "Moq",
+    "UserManagement.API.Models",
+    "UserManagement.API.Services",
+    "Xunit"
+  ],
+  "technologies": [
+    "Microsoft.Extensions.Logging",
+    "Moq",
+    "xUnit"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 1,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 117,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:33.0218857Z",
+  "technologiesFilePath": ""
+}

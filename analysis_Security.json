@@ -1,0 +1,26 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Security\\Security.csproj",
+  "projectName": "Security",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "BCrypt.Net-Next@4.0.3",
+    "Microsoft.AspNetCore.Authentication.JwtBearer@8.0.0",
+    "Microsoft.IdentityModel.Tokens@7.0.0",
+    "System.IdentityModel.Tokens.Jwt@7.0.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 0,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 0,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:32.3681339Z",
+  "technologiesFilePath": ""
+}

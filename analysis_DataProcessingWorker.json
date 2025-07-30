@@ -1,0 +1,37 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\BackgroundServices\\DataProcessingWorker\\DataProcessingWorker.csproj",
+  "projectName": "DataProcessingWorker",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "Hangfire.AspNetCore@1.8.6",
+    "Hangfire.SqlServer@1.8.6",
+    "Hangfire@1.8.6",
+    "MassTransit.Extensions.DependencyInjection@7.3.1",
+    "MassTransit.RabbitMQ@8.1.3",
+    "MassTransit@8.1.3",
+    "Microsoft.EntityFrameworkCore.Design@8.0.0",
+    "Microsoft.EntityFrameworkCore.SqlServer@8.0.0",
+    "Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+    "Microsoft.Extensions.Hosting.Systemd@8.0.0",
+    "Microsoft.Extensions.Hosting.WindowsServices@8.0.0",
+    "Microsoft.Extensions.Hosting@8.0.0",
+    "Serilog.Extensions.Hosting@8.0.0",
+    "Serilog.Sinks.Console@5.0.0",
+    "Serilog.Sinks.File@5.0.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 0,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 0,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:30.7302538Z",
+  "technologiesFilePath": ""
+}

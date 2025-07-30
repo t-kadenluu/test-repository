@@ -1,0 +1,33 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Services\\InventoryManagement\\InventoryManagement.API.csproj",
+  "projectName": "InventoryManagement.API",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "AutoMapper@12.0.1",
+    "FluentValidation.AspNetCore@11.3.0",
+    "Microsoft.AspNetCore.OpenApi@8.0.0",
+    "Microsoft.EntityFrameworkCore.Design@8.0.0",
+    "Microsoft.EntityFrameworkCore.SqlServer@8.0.0",
+    "Serilog.AspNetCore@8.0.0",
+    "Swashbuckle.AspNetCore@6.5.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [
+    "Microsoft.AspNetCore.Mvc"
+  ],
+  "technologies": [
+    "ASP.NET Core"
+  ],
+  "metadata": {
+    "TotalSourceFiles": 3,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 111,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:31.1920494Z",
+  "technologiesFilePath": ""
+}

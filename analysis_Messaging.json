@@ -1,0 +1,26 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\src\\Shared\\Messaging\\Messaging.csproj",
+  "projectName": "Messaging",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "MassTransit.RabbitMQ@8.1.0",
+    "MassTransit@8.1.0",
+    "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.0",
+    "Microsoft.Extensions.Logging.Abstractions@8.0.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 0,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 0,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:31.5762089Z",
+  "technologiesFilePath": ""
+}

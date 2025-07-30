@@ -1,0 +1,36 @@
+{
+  "projectPath": "C:\\Users\\t-kadenluu\\OneDrive - Microsoft\\Desktop\\BotTesting\\test-repository\\tools\\CodeGenerator\\CodeGenerator.csproj",
+  "projectName": "CodeGenerator",
+  "targetFramework": "net8.0",
+  "dependencies": [
+    "CommandLineParser@2.9.1",
+    "Humanizer@2.14.1",
+    "Microsoft.CodeAnalysis.Analyzers@3.3.4",
+    "Microsoft.CodeAnalysis.CSharp@4.7.0",
+    "Microsoft.Extensions.Configuration.Json@8.0.0",
+    "Microsoft.Extensions.Configuration@8.0.0",
+    "Microsoft.Extensions.DependencyInjection@8.0.0",
+    "Microsoft.Extensions.Hosting@8.0.0",
+    "Microsoft.Extensions.Logging.Console@8.0.0",
+    "Microsoft.Extensions.Logging@8.0.0",
+    "Newtonsoft.Json@13.0.3",
+    "Scriban@5.9.0",
+    "System.CodeDom@8.0.0",
+    "YamlDotNet@15.1.0"
+  ],
+  "projectDependencies": [],
+  "namespaces": [],
+  "technologies": [],
+  "metadata": {
+    "TotalSourceFiles": 0,
+    "ConfigurationFiles": 0,
+    "HasWebConfig": false,
+    "HasAppConfig": false,
+    "TargetFramework": "net8.0",
+    "EstimatedTotalLines": 0,
+    "FrameworkDependentFiles": 0,
+    "MigrationComplexityScore": "Low"
+  },
+  "analyzedAt": "2025-07-30T20:43:30.0397849Z",
+  "technologiesFilePath": ""
+}
