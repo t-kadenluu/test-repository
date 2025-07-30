@@ -20,18 +20,39 @@
     "Serilog.Sinks.File@5.0.0"
   ],
   "projectDependencies": [],
-  "namespaces": [],
-  "technologies": [],
+  "namespaces": [
+    "AutoMapper",
+    "FluentValidation",
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.DependencyInjection",
+    "Microsoft.Extensions.Hosting",
+    "Microsoft.Extensions.Logging",
+    "System",
+    "System.Collections.Generic",
+    "System.IO",
+    "System.Linq",
+    "System.Text.Json",
+    "System.Threading",
+    "System.Threading.Tasks"
+  ],
+  "technologies": [
+    "Dependency Injection",
+    "Entity Framework Core",
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.Logging",
+    "System.Text.Json"
+  ],
   "metadata": {
-    "TotalSourceFiles": 0,
+    "TotalSourceFiles": 2,
     "ConfigurationFiles": 0,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 0,
+    "EstimatedTotalLines": 350,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:23:06.4142631Z",
+  "analyzedAt": "2025-07-30T21:25:37.9011849Z",
   "technologiesFilePath": ""
 }

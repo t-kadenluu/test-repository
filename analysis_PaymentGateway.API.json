@@ -12,19 +12,42 @@
   ],
   "projectDependencies": [],
   "namespaces": [
-    "PaymentGateway.API.Models"
+    "AutoMapper",
+    "FluentValidation",
+    "Microsoft.AspNetCore.Authorization",
+    "Microsoft.AspNetCore.Http",
+    "Microsoft.AspNetCore.Mvc",
+    "Microsoft.EntityFrameworkCore",
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.Logging",
+    "PaymentGateway.API.Models",
+    "Swashbuckle.AspNetCore.Annotations",
+    "System",
+    "System.Collections.Generic",
+    "System.Net.Http",
+    "System.Security.Claims",
+    "System.Security.Cryptography",
+    "System.Text.Json",
+    "System.Threading.Tasks"
   ],
-  "technologies": [],
+  "technologies": [
+    "ASP.NET Core",
+    "Entity Framework Core",
+    "HttpClient",
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.Logging",
+    "System.Text.Json"
+  ],
   "metadata": {
-    "TotalSourceFiles": 2,
+    "TotalSourceFiles": 4,
     "ConfigurationFiles": 0,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 301,
+    "EstimatedTotalLines": 669,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:23:06.5653232Z",
+  "analyzedAt": "2025-07-30T21:25:38.3429499Z",
   "technologiesFilePath": ""
 }
