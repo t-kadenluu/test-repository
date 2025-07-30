@@ -9,18 +9,35 @@
     "System.IdentityModel.Tokens.Jwt@7.0.0"
   ],
   "projectDependencies": [],
-  "namespaces": [],
-  "technologies": [],
+  "namespaces": [
+    "AutoMapper",
+    "FluentValidation",
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.DependencyInjection",
+    "Microsoft.Extensions.Logging",
+    "System",
+    "System.Collections.Generic",
+    "System.Security.Cryptography",
+    "System.Text",
+    "System.Text.Json",
+    "System.Threading.Tasks"
+  ],
+  "technologies": [
+    "Dependency Injection",
+    "Microsoft.Extensions.Configuration",
+    "Microsoft.Extensions.Logging",
+    "System.Text.Json"
+  ],
   "metadata": {
-    "TotalSourceFiles": 0,
+    "TotalSourceFiles": 1,
     "ConfigurationFiles": 0,
     "HasWebConfig": false,
     "HasAppConfig": false,
     "TargetFramework": "net8.0",
-    "EstimatedTotalLines": 0,
+    "EstimatedTotalLines": 134,
     "FrameworkDependentFiles": 0,
     "MigrationComplexityScore": "Low"
   },
-  "analyzedAt": "2025-07-30T21:25:38.440375Z",
+  "analyzedAt": "2025-07-30T21:26:18.9352873Z",
   "technologiesFilePath": ""
 }
